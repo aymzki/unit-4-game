@@ -1,5 +1,5 @@
  // Create on-click event that responds to button clicks of the crystal image.
- $(document).ready(function() {
+ $(document).ready(() => {
 
  $(".crystal-image").on("click", function() {
 
