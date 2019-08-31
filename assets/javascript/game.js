@@ -1,6 +1,13 @@
  //Document ready makes sure webpage is ready before starting jQuery code
  $(document).ready(() => {
 
+ //Set "targetNumber" that the user should be aiming to reach
+ var targetNumber = 50;
+
+ //Set "number-to-guess" header to match targetNumber
+ $("#number-to-guess").text(targetNumber);
+
+
  //Made a counter to track user's total
  var counter = 0;
     // Create on-click event that responds to button clicks of the crystal image.   
