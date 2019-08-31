@@ -19,6 +19,19 @@
     // Clicking the button triggers an alert message.
     alert("Your new score is: " + counter);
 
+    //Check if click counter matches targetNumber
+    if (counter === targetNumber) {
+
+        //If numbers match, celebrate the win
+        alert("You win!");
+    }
+
+    //If the user's counter exceeds targetNumber they lose.
+    else if (counter >= targetNumber) {
+
+        alert("You lose!");
+    }
+
   });
 
 });
