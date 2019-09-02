@@ -11,18 +11,19 @@ body {
 .wrapper {
     display: flex;
     background-color: black;
-    width: 900px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    width: 800px;
+    justify-content: center;
+    align-items: space-around;
+    flex-wrap: nowrap;
     box-sizing: border-box;
+    margin: 0 auto;
 }
-
 
 .crystal-image {
     position: relative;
     width: 150px;
     height: 100px;
-    padding: 10px;
+    padding: 20px;
     display: inline-block;
 }
 
@@ -31,6 +32,6 @@ body {
     font-size: 20px;
     text-align: center;
     margin: 50px auto;
-    height: 100px;
-    width: 80%;
+    height: 50px;
+    width: 50%;
 }
