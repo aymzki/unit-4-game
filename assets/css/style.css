@@ -1,10 +1,42 @@
 
 /*Background*/
+
 body {
     background-image: url("../images/prism.png");
     background-repeat: repeat;
 }
 
+h1 {
+    text-align: center;
+    size: 30px;
+}
+
+h2 {
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px auto;
+    height: 50px;
+    width: 50%;
+}
+
+#wins {
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px auto;
+    height: 50px;
+    width: 50%;
+}
+
+#losses {
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px auto;
+    height: 50px;
+    width: 50%;
+}
 
 /*Image stylings*/
 
@@ -26,6 +58,8 @@ body {
     padding: 20px;
     display: inline-block;
 }
+
+/*Total Score*/
 
 #totalScore {
     background-color: white;
