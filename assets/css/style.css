@@ -1,7 +1,36 @@
 
+/*Background*/
+body {
+    background-image: url("../images/prism.png");
+    background-repeat: repeat;
+}
+
+
 /*Image stylings*/
 
+.wrapper {
+    display: flex;
+    background-color: black;
+    width: 900px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+
 .crystal-image {
-    width: 250px;
-   
+    position: relative;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#totalScore {
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px auto;
+    height: 100px;
+    width: 80%;
 }

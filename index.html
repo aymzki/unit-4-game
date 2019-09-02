@@ -23,7 +23,8 @@
             You will be given a random number at the start of the game.
         </p>
         <p>
-            There are four crystals below. By clicking on a crystal you will add a speific amount of points to your total
+            There are four crystals below. By clicking on a crystal you will add a speific amount of points to your
+            total
             score.
         </p>
         <p>
@@ -38,7 +39,8 @@
     </div>
 
     <!--Where the stats will show-->
-    <h1>Number to Guess: <span id="number-to-guess"></span></h1></h1>
+    <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+    </h1>
     </div>
     <div id="wins">
         Wins:
@@ -47,17 +49,20 @@
         Losses:
     </div>
     <!--Where our row of crystals will be-->
-    <div class="crystal">
-        <img class="crystal-image" id="crystal1" src="assets/images/crystal1.jpg">
-    </div>
-    <div class="crystal">
-        <img class="crystal-image" id="crystal2" src="assets/images/crystal2.jpg">
-    </div>
-    <div class="crystal">
-        <img class="crystal-image" id="crystal3" src="assets/images/crystal3.jpg">
-    </div>
-    <div class="crystal">
-        <img class="crystal-image" id="crystal4" src="assets/images/crystal4.jpg">
+
+    <div class="wrapper">
+        <div class="crystal">
+            <img class="crystal-image" id="crystal1" src="assets/images/crystal1.jpg">
+        </div>
+        <div class="crystal">
+            <img class="crystal-image" id="crystal2" src="assets/images/crystal2.jpg">
+        </div>
+        <div class="crystal">
+            <img class="crystal-image" id="crystal3" src="assets/images/crystal3.jpg">
+        </div>
+        <div class="crystal">
+            <img class="crystal-image" id="crystal4" src="assets/images/crystal4.jpg">
+        </div>
     </div>
 
     <!--Total Score Shown below-->
@@ -67,7 +72,7 @@
     <!--Linking jQuery library-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Linking Javascript page *note to self: important, must be listed under the jQuery linking line-->
-      <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>

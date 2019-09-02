@@ -11,9 +11,9 @@ $(document).ready(() => {
     var counter = 0;
     var youWin = 0;
     var youLose = 0;
-    
+
     generateNumber()
-    
+
     function generateNumber() {
 
         for (var i = 0; i < 5; i++) {
