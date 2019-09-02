@@ -2,10 +2,12 @@
 $(document).ready(() => {
 
     //Set "targetNumber" that the user should be aiming to reach
-    var targetNumber = 50;
 
-    //Set "number-to-guess" header to match targetNumber
-    $("#number-to-guess").text(targetNumber);
+        var targetNumber = Math.floor(Math.random() * ((120-19) + 1)) + 19;
+
+        //Set "number-to-guess" header to match targetNumber
+        $("#number-to-guess").text(targetNumber);
+
 
     //Made a counter to track user's total
     var counter = 0;
@@ -18,9 +20,9 @@ $(document).ready(() => {
 
         for (var i = 0; i < 5; i++) {
 
-            var index = i + 1
+            var index = i + 1;
 
-            var randomNumber = Math.floor(Math.random() * 20);
+            var randomNumber = Math.floor(Math.random() * 12);
 
             //each iteration will have a var imageCrystal
             var imageCrystal = $("#crystal" + index);
