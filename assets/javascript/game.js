@@ -1,15 +1,21 @@
 //Document ready makes sure webpage is ready before starting jQuery code
 $(document).ready(() => {
 
-    //Set "targetNumber" that the user should be aiming to reach
 
-        var targetNumber = Math.floor(Math.random() * ((120-19) + 1)) + 19;
+    var targetNumber;
+    
+    setTargetNumber()
+
+    function setTargetNumber() {
+        //Set "targetNumber" that the user should be aiming to reach
+
+        var targetNumber = Math.floor(Math.random() * ((120 - 19) + 1)) + 19;
 
         //Set "number-to-guess" header to match targetNumber
         $("#number-to-guess").text(targetNumber);
 
-
-    //Made a counter to track user's total
+    }
+    //Made counter to track user's total
     var counter = 0;
     var youWin = 0;
     var youLose = 0;
@@ -48,11 +54,6 @@ $(document).ready(() => {
         $("#totalScore").text("Your total score is: " + counter);
 
 
-        // Clicking the button triggers an alert message.
-
-        alert("Your new score is: " + counter);
-
-
         //Check if click counter matches targetNumber
         if (counter === targetNumber) {
 
@@ -65,6 +66,7 @@ $(document).ready(() => {
             counter = 0;
 
             generateNumber();
+            setTargetNumber();
 
         }
 
@@ -79,6 +81,7 @@ $(document).ready(() => {
             counter = 0;
 
             generateNumber();
+            setTargetNumber();
         }
 
 
