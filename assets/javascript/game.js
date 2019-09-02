@@ -3,7 +3,7 @@ $(document).ready(() => {
 
 
     var targetNumber;
-    
+
     setTargetNumber()
 
     function setTargetNumber() {
@@ -28,7 +28,7 @@ $(document).ready(() => {
 
             var index = i + 1;
 
-            var randomNumber = Math.floor(Math.random() * 12);
+            var randomNumber = Math.floor(Math.random() * ((12 - 1) + 1)) + 1;
 
             //each iteration will have a var imageCrystal
             var imageCrystal = $("#crystal" + index);
@@ -51,9 +51,12 @@ $(document).ready(() => {
         counter += crystalValue;
         console.log(crystalValue);
 
+        //have the total score show up as alert and on screen
         $("#totalScore").text("Your total score is: " + counter);
 
+        alert("Your new score is: " + counter);
 
+       
         //Check if click counter matches targetNumber
         if (counter === targetNumber) {
 
