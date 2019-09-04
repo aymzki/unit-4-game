@@ -8,8 +8,7 @@ $(document).ready(() => {
 
     function setTargetNumber() {
         //Set "targetNumber" that the user should be aiming to reach
-
-        var targetNumber = Math.floor(Math.random() * ((120 - 19) + 1)) + 19;
+        targetNumber = Math.floor(Math.random() * ((120 - 19) + 1)) + 19;
 
         //Set "number-to-guess" header to match targetNumber
         $("#number-to-guess").text(targetNumber);
@@ -30,7 +29,7 @@ $(document).ready(() => {
 
             var randomNumber = Math.floor(Math.random() * ((12 - 1) + 1)) + 1;
 
-            //each iteration will have a var imageCrystal
+            //each iteration will have a var imageCrystal, #crystal is the div id for each image
             var imageCrystal = $("#crystal" + index);
 
             //each imageCrystal will be assigned a data attribute depending on number options
@@ -55,10 +54,13 @@ $(document).ready(() => {
         $("#totalScore").text("Your total score is: " + counter);
 
         alert("Your new score is: " + counter);
+   
+       console.log(counter);
+       console.log(targetNumber);
 
-       
-        //Check if click counter matches targetNumber
+        //Check if counter matches targetNumber
         if (counter === targetNumber) {
+            console.log("counter = targetNumber");
 
             youWin++;
             $("#wins").append(youWin);
@@ -74,8 +76,8 @@ $(document).ready(() => {
         }
 
         //If the user's counter exceeds targetNumber they lose.
-        else if (counter >= targetNumber) {
-
+        else if (counter > targetNumber) {
+            console.log("counter > targetNumber");
             youLose++;
             $("#losses").append(youLose);
 
@@ -86,10 +88,10 @@ $(document).ready(() => {
             generateNumber();
             setTargetNumber();
         }
-
-
-
     });
+
+
+    
 
 
 
