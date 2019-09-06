@@ -1,4 +1,4 @@
-# unit-4-game
+# Crystals Collector
 
 A guessing game made using jQuery.
 
